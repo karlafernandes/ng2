@@ -1,5 +1,4 @@
-import { Component } from '@angular/core';
-import {MailService} from "./mail.service";
+import {Component, Inject} from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -8,5 +7,5 @@ import {MailService} from "./mail.service";
 export class AppComponent {
   title = 'Lets get started';
 
-  constructor(private mail:MailService){}
+  constructor(@Inject('mail') private mail){}
 }
