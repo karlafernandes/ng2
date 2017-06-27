@@ -18,7 +18,8 @@ import {MailService} from "./mail.service";
     HttpModule
   ],
   providers: [
-      {provide: 'mail', useClass: MailService}
+    {provide: 'mail', useClass: MailService},
+    {provide: 'api', useValue: 'http://localhost:4200/'}
   ],
   bootstrap: [AppComponent]
 })
