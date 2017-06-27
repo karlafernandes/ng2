@@ -2,7 +2,7 @@ import {Component, OnInit, Input} from '@angular/core';
 
 @Component({
   selector: 'app-simple-form',
-  template: '<div>{{message}}<input #myInput type="text" [(ngModel)]="message"><button (click)="onClick($event, myInput.value)">Click me!</button></div>',
+  template: '<div>{{message}}<input #myInput type="text" [(ngModel)]="message"><button (click)="onClick($event, message)">Click me!</button></div>',
   styleUrls: ['./simple-form.component.css']
 })
 export class SimpleFormComponent implements OnInit {
